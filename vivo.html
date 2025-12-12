@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun,Res,Gro,Tech Websites</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="home.css"> 
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<style>
+    .product-card {
+        background: #eae8e6;
+        padding: 25px 15px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .stars i {
+        color: gold;
+        font-size: 1rem;
+    }
+
+    .product-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .add-btn {
+        background: #ffd500;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 4px 8px;
+        border-radius: 6px;
+    }
+
+    .add-btn:hover{
+        background-color: orange;
+    }
+
+    .dot {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    .color1 { background: #2a2827; }
+    .color2 { background: #167777; }
+    .color3 { background: #95c7c7; }
+
+    .brown { background: #4d3a33; }
+    .lightblue { background: #a5c4d5; }
+    .teal { background: #207e7b; }
+
+    .pink { background: #f4b7c4; }
+    .black { background: #000; }
+    .blue { background: #005fcb; }
+
+</style>
+</head>
+<body>
+<main class="animate__animated animate__fadeInLeft">
+<div class="container-fluid top-nav">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo d-flex flex-column align-items-center">
+      <img src="images/b8bffd0b2b7b8b779b9270fde840f2feb8123788.png" alt="Logo">
+      <h3 class="fw-bold fs-2">Tech Company</h3>
+    </div>
+
+    <div class="search-box flex-grow-1 mx-5">
+        <input type="text" class="form-control" placeholder="Search For">
+        <i class="bi bi-search search-icon"></i>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <i class="bi bi-cart-fill me-3" style="font-size: 2rem;" onclick="window.location.href='cart.html'"></i>
+      <i class="bi bi-bell-fill me-3" style="font-size: 2rem;"></i>
+
+      <button class="btn px-4 py-2 fw-bold" style="font-size:1.5rem;background-color: #13B82E;" id="regBtn" onclick="window.location.href='register.html'">
+        Register
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<nav class="top-nav pt-1 pb-3">
+  <div class="container text-center nav-links">
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="product.html">Product</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blogs</a>
+  </div>
+</nav>
+
+<h2 style="font-size: 2.5rem;font-weight: bold;margin: 100px;">Vivo Brands</h2>
+<div class="container mt-3">
+    <div class="row justify-content-center gy-4">
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 76.png" alt="product 1" >
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-md-6">
+                        <h4 class="product-name">VivoY300</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="price">$39799</p>
+
+                        <div class="colors">
+                            <span class="dot color1"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot color3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 89.png" alt="product 2">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-md-6">
+                        <h4 class="product-name">Vivo Y39</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="price">$19000</p>
+
+                        <div class="colors">
+                            <span class="dot brown"></span>
+                            <span class="dot lightblue"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 120.png" alt="product 3">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-6 text-start">
+                        <h4 class="product-name">Vivo Y19</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <p class="price">$12500</p>
+
+                        <div class="colors">
+                            <span class="dot teal"></span>
+                            <span class="dot lightblue"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 121.png" alt="product 4">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-6 text-start">
+                        <h4 class="product-name">Vivo X200</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <p class="price">$54000</p>
+
+                        <div class="colors">
+                            <span class="dot pink"></span>
+                            <span class="dot black"></span>
+                            <span class="dot blue"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gy-4 mt-3">
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 92.png" alt="product 5" >
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-md-6">
+                        <h4 class="product-name">Vivo V50e</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="price">$31000</p>
+
+                        <div class="colors">
+                            <span class="dot" style="background-color: rgb(246, 143, 160);"></span>
+                            <span class="dot" style="background-color: white;"></span>
+                            <span class="dot" style="background-color: skyblue;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 93.png" alt="product 6">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-md-6">
+                        <h4 class="product-name">Vivo Y300</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="price">$21000</p>
+
+                        <div class="colors">
+                            <span class="dot brown"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot lightblue"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 94.png" alt="product 7">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-6 text-start">
+                        <h4 class="product-name">Vivo X100</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <p class="price">$54500</p>
+
+                        <div class="colors">
+                            <span class="dot teal"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot lightblue"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 95.png" alt="product 8">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-6 text-start">
+                        <h4 class="product-name">Vivo V50</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <p class="price">$3899</p>
+
+                        <div class="colors">
+                            <span class="dot blue"></span>
+                            <span class="dot pink"></span>
+                            <span class="dot " style="background-color: white;"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gy-4 mt-3">
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 96.png" alt="product 9" >
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-md-6">
+                        <h4 class="product-name">Vivo V40</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="price">$31000</p>
+
+                        <div class="colors">
+                            <span class="dot color1"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot color3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 97.png" alt="product 10">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-md-6">
+                        <h4 class="product-name">Vivo Y29</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="price">$17000</p>
+
+                        <div class="colors">
+                            <span class="dot color3"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot" style="background-color: white;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 98.png" alt="product 11">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+               
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-6 text-start">
+                        <h4 class="product-name">Vivo V30</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <p class="price">$34000</p>
+
+                        <div class="colors">
+                            <span class="dot color1"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot" style="background-color: white;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 99.png" alt="product 12">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-6 text-start">
+                        <h4 class="product-name">Vivo Y27</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <p class="price">$12000</p>
+
+                        <div class="colors">
+                            <span class="dot blue"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot " style="background-color: white;"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center gy-4 mt-3 mb-5">
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 100.png" alt="product 13" >
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-md-6">
+                        <h4 class="product-name">Vivo T3x</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="price">$11999</p>
+
+                        <div class="colors">
+                            <span class="dot color1"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot color3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 101.png" alt="product 14">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-md-6">
+                        <h4 class="product-name">Vivo XFold5</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="price">$1,40,999</p>
+
+                        <div class="colors">
+                            <span class="dot color3"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot" style="background-color: white;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 102.png" alt="product 15">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-6 text-start">
+                        <h4 class="product-name">Vivo T4x</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <p class="price">$14600</p>
+
+                        <div class="colors">
+                            <span class="dot color1"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot" style="background-color: white;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="images/Ellipse 103.png" alt="product 16">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="row mt-3 align-items-center two-cols">
+                    <div class="col-6 text-start">
+                        <h4 class="product-name">Vivo V20</h4>
+                        <button class="btn add-btn" onclick="window.location.href='cart.html'">Add To Cart</button>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <p class="price">$27990</p>
+
+                        <div class="colors">
+                            <span class="dot" style="background-color: rgb(218, 89, 241);"></span>
+                            <span class="dot color2"></span>
+                            <span class="dot color1"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="row align-items-start">
+
+            <div class="col-md-3">
+                <div class="footer-logo">
+                    <img src="images/b8bffd0b2b7b8b779b9270fde840f2feb8123788.png" alt="Logo">
+                </div>
+                <h3 class="fw-bold fs-2" style="color: black;">Tech Company</h3>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="footer-title">Company</h5>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Community</a>
+                <a href="#">Testimonial</a>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="footer-title">Support</h5>
+                <a href="#">Help Center</a>
+                <a href="#">Webians</a>
+                <a href="#">Feedback</a>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="footer-title">Links</h5>
+                <a href="#">Course</a>
+                <a href="#">Service</a>
+                <a href="#">All in One</a>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="footer-title">Contact Us</h5>
+                <a style="color: black;"><i class="bi bi-person-lines-fill"></i> +91 77898 79034</a>
+                <a style="color: black;"><i class="bi bi-envelope-fill"></i> nazer2000@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="d-flex footer-icons" style="float: right;">
+            <i class="bi bi-google"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-facebook"></i>
+        </div>
+
+    </div>
+</footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

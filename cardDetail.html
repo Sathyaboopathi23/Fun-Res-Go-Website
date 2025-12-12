@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun,Res,Gro,Tech Websites</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> 
+<link rel="stylesheet" href="home.css"> 
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<style>
+    .card-img-top-custom {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+        border: none;
+        background: #D9D9D9;
+        border-radius: 10px;
+    }
+
+    .form-box:focus {
+        outline: none;
+        box-shadow: 0 0 3px gray;
+    }
+
+    .continue-btn {
+        width: 100%;
+        padding: 15px;
+        background: #0EB100;
+        color: #fff;
+        font-size: 1.4rem;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .continue-btn:hover {
+        background: #0a9600;
+    }
+</style>
+</head>
+<body>
+<main class="animate__animated animate__fadeInLeft">
+<div class="container-fluid top-nav">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo d-flex flex-column align-items-center">
+      <img src="images/b8bffd0b2b7b8b779b9270fde840f2feb8123788.png" alt="Logo">
+      <h3 class="fw-bold fs-2">Tech Company</h3>
+    </div>
+
+    <div class="search-box flex-grow-1 mx-5">
+        <input type="text" class="form-control" placeholder="Search For">
+        <i class="bi bi-search search-icon"></i>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <i class="bi bi-cart-fill me-3" style="font-size: 2rem;" onclick="window.location.href='cart.html'"></i>
+      <i class="bi bi-bell-fill me-3" style="font-size: 2rem;"></i>
+
+      <button class="btn px-4 py-2 fw-bold" style="font-size:1.5rem;background-color: #13B82E;" id="regBtn" onclick="window.location.href='register.html'">
+        Register
+      </button>
+      <button class="btn px-4 py-2 fw-bold" style="font-size:1.5rem;display: none;background-color: #13B82E;" id="loginBtn">
+        Login
+      </button>
+      <button class="btn px-4 py-2 fw-bold" style="font-size:1.5rem;display: none;background-color:rgba(64, 33, 75, 0.3) ;" id="logoutBtn">
+        Logout
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<nav class="top-nav pt-1 pb-3">
+  <div class="container text-center nav-links">
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="product.html">Product</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blogs</a>
+  </div>
+</nav>
+
+<script>
+    document.getElementById("regBtn").addEventListener("click",()=>{
+        document.getElementById("regBtn").style.display="none";
+        document.getElementById("loginBtn").style.display="block";
+    })
+    document.getElementById("loginBtn").addEventListener("click",()=>{
+        document.getElementById("loginBtn").style.display="none";
+        document.getElementById("logoutBtn").style.display="block";
+    })
+    document.getElementById("logoutBtn").addEventListener("click",()=>{
+        document.getElementById("logoutBtn").style.display="none";
+        document.getElementById("regBtn").style.display="block";
+    })   
+    
+</script>
+
+<div class="container py-5">
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-4 text-center">
+            <img src="images/Rectangle 279.png" class="card-img-top-custom">
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+
+            <input type="text" class="form-box mb-3" placeholder="Card Holder Name">
+            <input type="text" class="form-box mb-3" placeholder="Card Number">
+            <input type="text" class="form-box mb-3" placeholder="Card Exp">
+            <input type="text" class="form-box mb-4" placeholder="Ccv">
+
+            <button class="continue-btn" onclick="window.location.href='orderConform.html'">Continue</button>
+        </div>
+    </div>
+</div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

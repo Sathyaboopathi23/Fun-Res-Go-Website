@@ -1,0 +1,108 @@
+body {
+    font-family: 'Inika','Inter', sans-serif;
+}
+
+.top-nav {
+    background-color: rgb(220, 154, 242) ;
+    padding: 15px 0;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.search-box{
+    position: relative;
+}
+
+.search-box input {
+    height: 50px;
+    border-radius:10px;
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #5a189a;
+}
+
+.hero-section {
+        background: url("images/b5e0393a8ecc144649a69466658c84cead47c210.jpg") no-repeat center/cover;
+        padding: 50px 40px;
+        color: white;
+        min-height: 550px;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 1.1;
+    }
+
+    .hero-desc {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-top: 30px;
+        width: 85%;
+    }
+
+    .robot-img {
+        width: 100%;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .startBtn{
+        background:rgb(234, 166, 8);
+        font-weight: bold;
+    }
+
+.footer {
+    background-color: #d9f345 ;
+    padding: 60px 0;
+}
+.footer-logo img {
+    width: 200px;
+}
+.footer-title {
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: black;
+}
+.footer a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-icons i {
+    font-size: 32px;
+    margin-right: 30px;
+    cursor: pointer;
+    color: black;
+}
+        

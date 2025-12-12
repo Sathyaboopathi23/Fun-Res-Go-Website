@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun,Res,Gro,Tech Websites</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="home.css"> 
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<style>
+    .frmCtrl {
+        background: #ddd;
+        border: none;
+        height: 50px;
+        border-radius: 5px;
+        
+    }
+
+    .login-btn {
+        background: #1fa41f;
+        color: white;
+        width: 140px;
+        font-size: 1.5rem;
+    }
+
+    .login-btn:hover {
+        background: #158115;
+        color: #fff;
+    }
+
+    .small-text a {
+        color: #d9534f;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<div class="container-fluid top-nav">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo d-flex flex-column align-items-center">
+      <img src="images/b8bffd0b2b7b8b779b9270fde840f2feb8123788.png" alt="Logo">
+      <h3 class="fw-bold fs-2">Tech Company</h3>
+    </div>
+
+    <div class="search-box flex-grow-1 mx-5">
+        <input type="text" class="form-control" placeholder="Search For">
+        <i class="bi bi-search search-icon"></i>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <i class="bi bi-cart-fill me-3" style="font-size: 2rem;" onclick="window.location.href='cart.html'"></i>
+      <i class="bi bi-bell-fill me-3" style="font-size: 2rem;"></i>
+
+      <button class="btn px-4 py-2 fw-bold" style="font-size:1.5rem;background-color:rgba(64, 33, 75, 0.3) ;" id="logoutBtn" onclick="window.location.href='home.html'">
+        Logout
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<nav class="top-nav pt-1 pb-3">
+  <div class="container text-center nav-links">
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="product.html">Product</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blogs</a>
+  </div>
+</nav>
+
+<div class="container" style="margin: 100px auto;">
+    <div class="row g-4 text-center justify-content-center">
+
+        <div class="col-md-5">
+            <input type="text" class="form-control frmCtrl" placeholder="Full Name">
+        </div>
+
+        <div class="col-md-5">
+            <input type="email" class="form-control frmCtrl" placeholder="E-Mail">
+        </div>
+
+        <div class="col-md-5">
+            <input type="password" class="form-control frmCtrl" placeholder="Password">
+        </div>
+
+        <div class="col-md-5">
+            <input type="password" class="form-control frmCtrl" placeholder="Confirm Password">
+        </div>
+
+        <div class="col-12 mt-4">
+            <button class="btn login-btn" onclick="window.location.href='home.html'">Login</button>
+        </div>
+
+        <div class="col-12 small-text mt-2">
+            <small>You Already Create Account Just <a href="#">Sign In</a></small>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="row align-items-start">
+
+            <div class="col-md-3">
+                <div class="footer-logo">
+                    <img src="images/b8bffd0b2b7b8b779b9270fde840f2feb8123788.png" alt="Logo">
+                </div>
+                <h3 class="fw-bold fs-2" style="color: black;">Tech Company</h3>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="footer-title">Company</h5>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Community</a>
+                <a href="#">Testimonial</a>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="footer-title">Support</h5>
+                <a href="#">Help Center</a>
+                <a href="#">Webians</a>
+                <a href="#">Feedback</a>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="footer-title">Links</h5>
+                <a href="#">Course</a>
+                <a href="#">Service</a>
+                <a href="#">All in One</a>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="footer-title">Contact Us</h5>
+                <a style="color: black;"><i class="bi bi-person-lines-fill"></i> +91 77898 79034</a>
+                <a style="color: black;"><i class="bi bi-envelope-fill"></i> nazer2000@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="d-flex footer-icons" style="float: right;">
+            <i class="bi bi-google"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-facebook"></i>
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
